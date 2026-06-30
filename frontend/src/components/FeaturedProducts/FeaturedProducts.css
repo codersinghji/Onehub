@@ -1,0 +1,271 @@
+/* ==========================
+   Featured Products
+========================== */
+
+.featured-products{
+    width:100%;
+    padding:70px 6%;
+    background:#f8f9fc;
+}
+
+.featured-header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:35px;
+    gap:20px;
+}
+
+.featured-header h2{
+    font-size:34px;
+    font-weight:700;
+    color:#1f2937;
+}
+
+.featured-header button{
+    background:#2563eb;
+    color:#fff;
+    border:none;
+    padding:12px 24px;
+    border-radius:8px;
+    cursor:pointer;
+    font-size:15px;
+    font-weight:600;
+    transition:.3s;
+}
+
+.featured-header button:hover{
+    background:#1d4ed8;
+}
+
+.featured-grid{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:25px;
+}
+
+.featured-card{
+    background:#fff;
+    border-radius:16px;
+    padding:20px;
+    text-align:center;
+    position:relative;
+    overflow:hidden;
+    transition:.3s ease;
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
+}
+
+.featured-card:hover{
+    transform:translateY(-8px);
+    box-shadow:0 15px 30px rgba(0,0,0,.15);
+}
+
+.featured-card img{
+    width:170px;
+    height:170px;
+    object-fit:contain;
+    transition:.3s;
+}
+
+.featured-card:hover img{
+    transform:scale(1.08);
+}
+
+.featured-card h3{
+    margin-top:18px;
+    font-size:20px;
+    color:#222;
+    font-weight:600;
+}
+
+.featured-rating{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:6px;
+    color:#f4b400;
+    margin:12px 0;
+    font-size:15px;
+}
+
+.featured-card h4{
+    font-size:24px;
+    color:#2563eb;
+    margin-bottom:18px;
+    font-weight:700;
+}
+
+.fav-btn{
+    position:absolute;
+    top:15px;
+    right:15px;
+    width:42px;
+    height:42px;
+    border:none;
+    border-radius:50%;
+    background:#fff;
+    color:#777;
+    cursor:pointer;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    box-shadow:0 4px 12px rgba(0,0,0,.15);
+    transition:.3s;
+}
+
+.fav-btn:hover{
+    color:#e11d48;
+    transform:scale(1.1);
+}
+
+.featured-cart{
+    width:100%;
+    border:none;
+    background:#2563eb;
+    color:#fff;
+    padding:14px;
+    border-radius:10px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:10px;
+    font-size:15px;
+    font-weight:600;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.featured-cart:hover{
+    background:#1d4ed8;
+}
+
+/* ==========================
+   Large Laptop
+========================== */
+
+@media(max-width:1200px){
+
+.featured-grid{
+    grid-template-columns:repeat(3,1fr);
+}
+
+}
+
+/* ==========================
+   Tablet
+========================== */
+
+@media(max-width:992px){
+
+.featured-products{
+    padding:60px 5%;
+}
+
+.featured-grid{
+    grid-template-columns:repeat(2,1fr);
+}
+
+.featured-card img{
+    width:150px;
+    height:150px;
+}
+
+.featured-header h2{
+    font-size:30px;
+}
+
+}
+
+/* ==========================
+   Mobile
+========================== */
+
+@media(max-width:768px){
+
+.featured-products{
+    padding:50px 20px;
+}
+
+.featured-header{
+    flex-direction:column;
+    text-align:center;
+}
+
+.featured-header h2{
+    font-size:28px;
+}
+
+.featured-header button{
+    width:170px;
+}
+
+.featured-grid{
+    grid-template-columns:repeat(2,1fr);
+    gap:18px;
+}
+
+.featured-card{
+    padding:16px;
+}
+
+.featured-card img{
+    width:120px;
+    height:120px;
+}
+
+.featured-card h3{
+    font-size:17px;
+}
+
+.featured-card h4{
+    font-size:20px;
+}
+
+}
+
+/* ==========================
+   Small Mobile
+========================== */
+
+@media(max-width:480px){
+
+.featured-products{
+    padding:40px 15px;
+}
+
+.featured-grid{
+    grid-template-columns:1fr;
+}
+
+.featured-header h2{
+    font-size:24px;
+}
+
+.featured-header button{
+    width:100%;
+}
+
+.featured-card img{
+    width:140px;
+    height:140px;
+}
+
+.featured-card h3{
+    font-size:18px;
+}
+
+.featured-card h4{
+    font-size:22px;
+}
+
+.featured-cart{
+    padding:13px;
+    font-size:14px;
+}
+
+.fav-btn{
+    width:38px;
+    height:38px;
+}
+
+}

@@ -1,0 +1,194 @@
+/* ==========================
+   Popular Brands
+========================== */
+
+.popular-brands{
+    padding:60px 8%;
+    background:#f5f7fb;
+}
+
+.brands-header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:30px;
+}
+
+.brands-header h2{
+    font-size:32px;
+    color:#222;
+    font-weight:700;
+}
+
+.brands-header button{
+    background:#2563eb;
+    color:#fff;
+    border:none;
+    padding:12px 22px;
+    border-radius:8px;
+    cursor:pointer;
+    font-size:15px;
+    font-weight:600;
+    transition:.3s;
+}
+
+.brands-header button:hover{
+    background:#1d4ed8;
+}
+
+.brands-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:25px;
+}
+
+.brand-card{
+    background:#fff;
+    border-radius:15px;
+    padding:25px;
+    text-align:center;
+    position:relative;
+    transition:.3s;
+    box-shadow:0 5px 20px rgba(0,0,0,.08);
+}
+
+.brand-card:hover{
+    transform:translateY(-8px);
+}
+
+.brand-card img{
+    width:140px;
+    height:90px;
+    object-fit:contain;
+    margin:20px auto;
+    transition:.3s;
+}
+
+.brand-card:hover img{
+    transform:scale(1.08);
+}
+
+.brand-card h3{
+    margin-top:10px;
+    font-size:22px;
+    color:#222;
+    font-weight:600;
+}
+
+.brand-card p{
+    margin-top:8px;
+    color:#777;
+    font-size:14px;
+}
+
+.shop-brand{
+    width:100%;
+    background:#2563eb;
+    color:#fff;
+    border:none;
+    padding:14px;
+    border-radius:10px;
+    margin-top:20px;
+    font-size:16px;
+    font-weight:600;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.shop-brand:hover{
+    background:#1d4ed8;
+}
+
+/* ==========================
+   Tablet
+========================== */
+
+@media(max-width:992px){
+
+.brands-grid{
+    grid-template-columns:repeat(2,1fr);
+}
+
+}
+
+/* ==========================
+   Mobile
+========================== */
+
+@media(max-width:768px){
+
+.popular-brands{
+    padding:50px 20px;
+}
+
+.brands-header{
+    flex-direction:column;
+    gap:15px;
+    text-align:center;
+}
+
+.brands-header h2{
+    font-size:28px;
+}
+
+.brands-header button{
+    width:170px;
+}
+
+.brands-grid{
+    grid-template-columns:repeat(2,1fr);
+    gap:18px;
+}
+
+.brand-card{
+    padding:20px;
+}
+
+.brand-card img{
+    width:100px;
+    height:70px;
+}
+
+.brand-card h3{
+    font-size:18px;
+}
+
+}
+
+/* ==========================
+   Small Mobile
+========================== */
+
+@media(max-width:480px){
+
+.popular-brands{
+    padding:40px 15px;
+}
+
+.brands-grid{
+    grid-template-columns:1fr;
+}
+
+.brands-header h2{
+    font-size:24px;
+}
+
+.brands-header button{
+    width:100%;
+}
+
+.brand-card img{
+    width:90px;
+    height:60px;
+}
+
+.brand-card h3{
+    font-size:18px;
+}
+
+.shop-brand{
+    font-size:14px;
+    padding:12px;
+}
+
+}
