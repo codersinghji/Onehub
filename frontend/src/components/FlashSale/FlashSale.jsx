@@ -1,4 +1,5 @@
 import "./FlashSale.css";
+import { Link } from "react-router-dom";
 
 import { FaStar, FaHeart, FaShoppingCart } from "react-icons/fa";
 
@@ -110,10 +111,13 @@ function FlashSale() {
           <h2>
             Flash Sale
           </h2>
+{/* 
+          <Link to="/flash-sale" className="view-all">
+          View All
+          </Link> */}
 
-          <button className="view-all">
-            View All
-          </button>
+          <Link to="/flash-sale"
+          className="view-all">View All</Link>
 
         </div>
 

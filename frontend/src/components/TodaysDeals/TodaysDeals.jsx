@@ -9,6 +9,9 @@ import camera from "../../assets/todaysdeals/camera.png";
 import printer from "../../assets/todaysdeals/printer.png";
 import chair from "../../assets/todaysdeals/chair.png";
 import table from "../../assets/todaysdeals/table.png";
+import { Link } from "react-router-dom";
+
+
 
 const deals = [
   {
@@ -92,11 +95,18 @@ function TodaysDeals() {
 
         <div className="deal-header">
           <h2>Today's Deals</h2>
-          <button
-           onClick={() => navigate("/product")}
-            >
-            View All
-            </button>
+            {/*           
+             <Link to="/products/todays-deals" className="view-all">
+              View All
+             </Link> */}
+             {/* <Link to="/flash-sale" className="view-all">
+              View All
+              </Link> */}
+
+              <Link to="/todays-deals"
+               className="view-all">View All</Link>
+          
+
         </div>
 
         <div className="deal-grid">

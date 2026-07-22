@@ -1,0 +1,167 @@
+/* ==========================
+   Grocery Section
+========================== */
+
+.grocery{
+    padding:70px 8%;
+    background:#f8fafc;
+}
+
+.grocery-header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:35px;
+}
+
+.grocery-header h2{
+    font-size:34px;
+    font-weight:700;
+    color:#222;
+}
+
+.grocery-header button{
+    background:#16a34a;
+    color:#fff;
+    border:none;
+    padding:12px 24px;
+    border-radius:8px;
+    cursor:pointer;
+    font-weight:600;
+    transition:.3s;
+}
+
+.grocery-header button:hover{
+    background:#15803d;
+}
+
+.grocery-content{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:40px;
+    align-items:center;
+}
+
+.grocery-left h3{
+    font-size:32px;
+    margin-bottom:15px;
+    color:#222;
+}
+
+.grocery-left p{
+    color:#666;
+    line-height:1.8;
+    margin-bottom:30px;
+}
+
+.grocery-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:20px;
+    margin-bottom:30px;
+}
+
+.grocery-card{
+    background:#fff;
+    border-radius:15px;
+    padding:20px;
+    text-align:center;
+    box-shadow:0 5px 20px rgba(0,0,0,.08);
+    transition:.3s;
+    cursor:pointer;
+}
+
+.grocery-card:hover{
+    transform:translateY(-8px);
+}
+
+.grocery-card img{
+    width:90px;
+    height:90px;
+    object-fit:contain;
+    margin-bottom:15px;
+}
+
+.grocery-card h4{
+    font-size:18px;
+    color:#333;
+}
+
+.shop-btn{
+    background:#16a34a;
+    color:#fff;
+    border:none;
+    padding:15px 28px;
+    border-radius:10px;
+    cursor:pointer;
+    display:flex;
+    align-items:center;
+    gap:10px;
+    font-size:16px;
+    font-weight:600;
+    transition:.3s;
+}
+
+.shop-btn:hover{
+    background:#15803d;
+}
+
+.grocery-right img{
+    width:100%;
+    border-radius:20px;
+}
+
+/* ==========================
+   Responsive
+========================== */
+
+@media(max-width:992px){
+
+.grocery-content{
+    grid-template-columns:1fr;
+}
+
+.grocery-grid{
+    grid-template-columns:repeat(2,1fr);
+}
+
+}
+
+@media(max-width:768px){
+
+.grocery{
+    padding:50px 20px;
+}
+
+.grocery-header{
+    flex-direction:column;
+    gap:15px;
+    text-align:center;
+}
+
+.grocery-header h2{
+    font-size:28px;
+}
+
+.grocery-grid{
+    grid-template-columns:repeat(2,1fr);
+}
+
+}
+
+@media(max-width:480px){
+
+.grocery-grid{
+    grid-template-columns:1fr;
+}
+
+.shop-btn{
+    width:100%;
+    justify-content:center;
+}
+
+.grocery-header button{
+    width:100%;
+}
+
+}

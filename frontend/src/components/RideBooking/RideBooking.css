@@ -1,0 +1,407 @@
+/* ==========================
+   Ride Booking Section
+========================== */
+
+.ride-booking{
+    padding:70px 8%;
+    background:#f5f7fb;
+}
+
+.ride-header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:40px;
+    gap:20px;
+}
+
+.ride-header h2{
+    font-size:34px;
+    color:#222;
+    font-weight:700;
+}
+
+.ride-header p{
+    margin-top:8px;
+    color:#666;
+    font-size:16px;
+}
+
+.view-btn{
+    background:#2563eb;
+    color:#fff;
+    border:none;
+    padding:12px 24px;
+    border-radius:8px;
+    cursor:pointer;
+    font-size:15px;
+    font-weight:600;
+    transition:.3s;
+}
+
+.view-btn:hover{
+    background:#1d4ed8;
+}
+
+/* ==========================
+   Wrapper
+========================== */
+
+.ride-wrapper{
+    display:grid;
+    grid-template-columns:1.1fr .9fr;
+    gap:40px;
+    align-items:center;
+}
+
+/* ==========================
+   Left
+========================== */
+
+.ride-left{
+    background:#fff;
+    padding:35px;
+    border-radius:20px;
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+}
+
+.ride-left h3{
+    font-size:30px;
+    color:#222;
+    margin-bottom:10px;
+}
+
+.ride-left p{
+    color:#666;
+    line-height:1.7;
+    margin-bottom:30px;
+}
+
+.input-box{
+    display:flex;
+    align-items:center;
+    gap:15px;
+    padding:15px 18px;
+    background:#f8fafc;
+    border:1px solid #e5e7eb;
+    border-radius:12px;
+    margin-bottom:18px;
+    transition:.3s;
+}
+
+.input-box:hover{
+    border-color:#2563eb;
+}
+
+.input-box svg{
+    color:#2563eb;
+    font-size:18px;
+}
+
+.input-box input{
+    width:100%;
+    border:none;
+    outline:none;
+    background:transparent;
+    font-size:15px;
+}
+
+.ride-title{
+    margin:30px 0 18px;
+    font-size:22px;
+    color:#222;
+}
+
+/* ==========================
+   Ride Cards
+========================== */
+
+.ride-list{
+    display:flex;
+    flex-direction:column;
+    gap:15px;
+}
+
+.ride-card{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:18px;
+    border-radius:14px;
+    background:#fff;
+    border:2px solid #e5e7eb;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.ride-card:hover{
+    transform:translateY(-4px);
+    border-color:#2563eb;
+    box-shadow:0 8px 18px rgba(0,0,0,.08);
+}
+
+.ride-card.active{
+    border-color:#2563eb;
+    background:#eff6ff;
+}
+
+.ride-icon{
+    width:55px;
+    height:55px;
+    background:#2563eb;
+    color:#fff;
+    border-radius:50%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:22px;
+}
+
+.ride-info{
+    flex:1;
+    margin-left:20px;
+}
+
+.ride-info h5{
+    font-size:18px;
+    color:#222;
+    margin-bottom:5px;
+}
+
+.ride-info span{
+    color:#777;
+    font-size:14px;
+}
+
+.ride-price{
+    font-size:22px;
+    font-weight:700;
+    color:#2563eb;
+}
+
+/* ==========================
+   Payment
+========================== */
+
+.payment-box{
+    margin-top:30px;
+    display:flex;
+    align-items:center;
+    gap:12px;
+    padding:16px;
+    border-radius:12px;
+    background:#f8fafc;
+    color:#444;
+}
+
+.payment-box svg{
+    color:#16a34a;
+    font-size:20px;
+}
+
+.book-btn{
+    width:100%;
+    margin-top:25px;
+    padding:16px;
+    border:none;
+    border-radius:12px;
+    background:#2563eb;
+    color:#fff;
+    cursor:pointer;
+    font-size:17px;
+    font-weight:600;
+    transition:.3s;
+}
+
+.book-btn:hover{
+    background:#1d4ed8;
+}
+
+/* ==========================
+   Right
+========================== */
+
+.ride-right{
+    position:relative;
+    text-align:center;
+}
+
+.ride-right img{
+    width:100%;
+    max-width:480px;
+    display:block;
+    margin:auto;
+}
+
+.ride-info-card{
+    position:absolute;
+    bottom:20px;
+    left:50%;
+    transform:translateX(-50%);
+    width:260px;
+    background:#fff;
+    padding:22px;
+    border-radius:18px;
+    box-shadow:0 10px 30px rgba(0,0,0,.12);
+}
+
+.ride-info-card h3{
+    color:#222;
+    margin-bottom:8px;
+}
+
+.ride-info-card p{
+    color:#777;
+    margin-bottom:10px;
+}
+
+.ride-info-card h4{
+    color:#16a34a;
+    margin-bottom:10px;
+}
+
+.ride-info-card h2{
+    color:#2563eb;
+    font-size:32px;
+}
+
+/* ==========================
+   Laptop
+========================== */
+
+@media(max-width:1200px){
+
+.ride-wrapper{
+    grid-template-columns:1fr 1fr;
+}
+
+}
+
+/* ==========================
+   Tablet
+========================== */
+
+@media(max-width:992px){
+
+.ride-booking{
+    padding:60px 5%;
+}
+
+.ride-wrapper{
+    grid-template-columns:1fr;
+}
+
+.ride-right{
+    order:-1;
+}
+
+.ride-info-card{
+    position:static;
+    transform:none;
+    width:100%;
+    margin-top:20px;
+}
+
+}
+
+/* ==========================
+   Mobile
+========================== */
+
+@media(max-width:768px){
+
+.ride-booking{
+    padding:50px 20px;
+}
+
+.ride-header{
+    flex-direction:column;
+    text-align:center;
+}
+
+.ride-header h2{
+    font-size:28px;
+}
+
+.view-btn{
+    width:170px;
+}
+
+.ride-left{
+    padding:25px;
+}
+
+.ride-left h3{
+    font-size:26px;
+}
+
+.ride-card{
+    padding:15px;
+}
+
+.ride-icon{
+    width:48px;
+    height:48px;
+    font-size:18px;
+}
+
+.ride-info h5{
+    font-size:16px;
+}
+
+.ride-price{
+    font-size:18px;
+}
+
+}
+
+/* ==========================
+   Small Mobile
+========================== */
+
+@media(max-width:480px){
+
+.ride-booking{
+    padding:40px 15px;
+}
+
+.ride-header h2{
+    font-size:24px;
+}
+
+.view-btn{
+    width:100%;
+}
+
+.ride-left{
+    padding:20px;
+}
+
+.input-box{
+    padding:13px;
+}
+
+.ride-card{
+    flex-direction:column;
+    text-align:center;
+    gap:12px;
+}
+
+.ride-info{
+    margin-left:0;
+}
+
+.ride-price{
+    font-size:20px;
+}
+
+.book-btn{
+    font-size:15px;
+    padding:14px;
+}
+
+.ride-info-card h2{
+    font-size:26px;
+}
+
+}

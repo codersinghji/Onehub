@@ -1,7 +1,7 @@
 import "./Categories.css";
 import electronics from "../../assets/categories/electronics.png";
 import fashion from "../../assets/categories/fashion.png";
-import grocery from "../../assets/categories/Grocery.png";
+import grocery from "../../assets/categories/grocery.png";
 import pharmacy from "../../assets/categories/pharmacy.png";
 import mobile from "../../assets/categories/mobile.png";
 import furniture from "../../assets/categories/furniture.png";

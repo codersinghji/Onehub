@@ -1,8 +1,11 @@
+import "./Cart.css";
+
 function Cart() {
   return (
-    <div>
-      <h1>Cart Page</h1>
-    </div>
+    <section className="cart-page">
+      <h1>Shopping Cart</h1>
+      <p>Your cart is currently empty.</p>
+    </section>
   );
 }
 

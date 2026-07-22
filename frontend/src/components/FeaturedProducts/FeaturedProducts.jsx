@@ -1,5 +1,6 @@
 import "./FeaturedProducts.css";
 import { FaStar, FaHeart, FaShoppingCart } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 import laptop from "../../assets/featured/laptop.png";
 import mobile from "../../assets/featured/mobile.png";
@@ -78,11 +79,18 @@ function FeaturedProducts() {
         <div className="featured-header">
           <h2>Featured Products</h2>
 
-          <button
-            onClick={() => alert("View All Products")}
-          >
-            View All
-          </button>
+          {/* <Link to="/featured-products" className="view-all">
+          View All
+         </Link> */}
+         {/* <Link to="/flash-sale" className="view-all">
+          View All
+          </Link> */}
+
+          <Link to="/featured-products"
+          className="view-all"
+          >View All</Link>
+
+
         </div>
 
         <div className="featured-grid">

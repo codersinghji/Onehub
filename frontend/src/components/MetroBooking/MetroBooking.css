@@ -1,0 +1,315 @@
+/* ==========================
+   Metro Booking
+========================== */
+
+.metro-booking{
+    padding:70px 8%;
+    background:#f5f7fb;
+}
+
+/* ==========================
+   Header
+========================== */
+
+.metro-header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:40px;
+    gap:20px;
+}
+
+.metro-header h2{
+    font-size:34px;
+    font-weight:700;
+    color:#222;
+}
+
+.metro-header p{
+    color:#666;
+    margin-top:8px;
+    font-size:16px;
+}
+
+.view-btn{
+    background:#2563eb;
+    color:#fff;
+    border:none;
+    padding:12px 24px;
+    border-radius:8px;
+    cursor:pointer;
+    font-size:15px;
+    font-weight:600;
+    transition:.3s;
+}
+
+.view-btn:hover{
+    background:#1d4ed8;
+}
+
+/* ==========================
+   Wrapper
+========================== */
+
+.metro-wrapper{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:40px;
+    align-items:center;
+}
+
+/* ==========================
+   Left Card
+========================== */
+
+.metro-left{
+    background:#fff;
+    padding:35px;
+    border-radius:20px;
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+}
+
+.metro-left h3{
+    font-size:30px;
+    color:#222;
+    margin-bottom:10px;
+}
+
+.metro-left p{
+    color:#666;
+    line-height:1.7;
+    margin-bottom:30px;
+}
+
+/* ==========================
+   Input Boxes
+========================== */
+
+.input-box{
+    display:flex;
+    align-items:center;
+    gap:15px;
+    background:#f8fafc;
+    border:1px solid #ddd;
+    border-radius:12px;
+    padding:15px 18px;
+    margin-bottom:18px;
+    transition:.3s;
+}
+
+.input-box:hover{
+    border-color:#2563eb;
+}
+
+.input-box svg{
+    color:#2563eb;
+    font-size:18px;
+}
+
+.input-box input,
+.input-box select{
+    width:100%;
+    border:none;
+    outline:none;
+    background:transparent;
+    font-size:15px;
+    color:#333;
+}
+
+/* ==========================
+   Search Button
+========================== */
+
+.search-btn{
+    width:100%;
+    margin-top:15px;
+    padding:16px;
+    border:none;
+    border-radius:12px;
+    background:#2563eb;
+    color:#fff;
+    font-size:17px;
+    font-weight:600;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.search-btn:hover{
+    background:#1d4ed8;
+}
+
+/* ==========================
+   Right Section
+========================== */
+
+.metro-right{
+    position:relative;
+    text-align:center;
+}
+
+.metro-right img{
+    width:100%;
+    max-width:500px;
+    display:block;
+    margin:auto;
+}
+
+/* ==========================
+   Info Card
+========================== */
+
+.metro-card{
+    position:absolute;
+    bottom:20px;
+    left:50%;
+    transform:translateX(-50%);
+    width:210px;
+    background:#fff;
+    padding:22px;
+    border-radius:18px;
+    box-shadow:0 10px 30px rgba(0,0,0,.12);
+}
+
+.metro-card h3{
+    color:#222;
+    margin-bottom:10px;
+}
+
+.metro-card p{
+    color:#777;
+    margin-bottom:10px;
+}
+
+.metro-card h2{
+    font-size:30px;
+    color:#2563eb;
+    margin-bottom:8px;
+}
+
+.metro-card span{
+    color:#16a34a;
+    font-weight:600;
+}
+
+/* ==========================
+   Large Screens
+========================== */
+
+@media(max-width:1200px){
+
+.metro-wrapper{
+    grid-template-columns:1fr 1fr;
+}
+
+}
+
+/* ==========================
+   Tablet
+========================== */
+
+@media(max-width:992px){
+
+.metro-booking{
+    padding:60px 5%;
+}
+
+.metro-wrapper{
+    grid-template-columns:1fr;
+}
+
+.metro-right{
+    order:-1;
+}
+
+.metro-card{
+    position:static;
+    transform:none;
+    width:100%;
+    margin-top:20px;
+}
+
+}
+
+/* ==========================
+   Mobile
+========================== */
+
+@media(max-width:768px){
+
+.metro-booking{
+    padding:50px 20px;
+}
+
+.metro-header{
+    flex-direction:column;
+    text-align:center;
+}
+
+.metro-header h2{
+    font-size:28px;
+}
+
+.view-btn{
+    width:180px;
+}
+
+.metro-left{
+    padding:25px;
+}
+
+.metro-left h3{
+    font-size:26px;
+}
+
+.input-box{
+    padding:14px;
+}
+
+.search-btn{
+    font-size:16px;
+}
+
+}
+
+/* ==========================
+   Small Mobile
+========================== */
+
+@media(max-width:480px){
+
+.metro-booking{
+    padding:40px 15px;
+}
+
+.metro-header h2{
+    font-size:24px;
+}
+
+.view-btn{
+    width:100%;
+}
+
+.metro-left{
+    padding:20px;
+}
+
+.input-box{
+    flex-direction:row;
+    gap:10px;
+    padding:12px;
+}
+
+.search-btn{
+    padding:14px;
+    font-size:15px;
+}
+
+.metro-card{
+    padding:18px;
+}
+
+.metro-card h2{
+    font-size:24px;
+}
+
+}

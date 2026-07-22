@@ -1,0 +1,156 @@
+/* ==========================
+   Pharmacy Section
+========================== */
+
+.pharmacy{
+    padding:70px 8%;
+    background:#f5f7fb;
+}
+
+.pharmacy-header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:35px;
+}
+
+.pharmacy-header h2{
+    font-size:34px;
+    color:#222;
+    font-weight:700;
+}
+
+.pharmacy-header button{
+    background:#22c55e;
+    color:#fff;
+    border:none;
+    padding:12px 22px;
+    border-radius:8px;
+    cursor:pointer;
+    font-weight:600;
+    transition:.3s;
+}
+
+.pharmacy-header button:hover{
+    background:#16a34a;
+}
+
+.pharmacy-content{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:40px;
+    align-items:center;
+}
+
+.pharmacy-left h3{
+    font-size:32px;
+    color:#222;
+    margin-bottom:15px;
+}
+
+.pharmacy-left p{
+    color:#666;
+    line-height:1.7;
+    margin-bottom:30px;
+}
+
+.pharmacy-grid{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:20px;
+    margin-bottom:30px;
+}
+
+.pharmacy-card{
+    background:#fff;
+    padding:20px;
+    border-radius:15px;
+    text-align:center;
+    box-shadow:0 5px 18px rgba(0,0,0,.08);
+    transition:.3s;
+}
+
+.pharmacy-card:hover{
+    transform:translateY(-8px);
+}
+
+.pharmacy-card img{
+    width:90px;
+    height:90px;
+    object-fit:contain;
+    margin-bottom:15px;
+}
+
+.pharmacy-card h4{
+    color:#333;
+    font-size:18px;
+}
+
+.shop-btn{
+    background:#22c55e;
+    color:#fff;
+    border:none;
+    padding:15px 28px;
+    border-radius:10px;
+    cursor:pointer;
+    font-size:16px;
+    font-weight:600;
+    display:flex;
+    align-items:center;
+    gap:10px;
+}
+
+.shop-btn:hover{
+    background:#16a34a;
+}
+
+.pharmacy-right img{
+    width:100%;
+    border-radius:20px;
+}
+
+/* ==========================
+   Responsive
+========================== */
+
+@media(max-width:992px){
+
+.pharmacy-content{
+    grid-template-columns:1fr;
+}
+
+}
+
+@media(max-width:768px){
+
+.pharmacy{
+    padding:50px 20px;
+}
+
+.pharmacy-header{
+    flex-direction:column;
+    gap:15px;
+}
+
+.pharmacy-header h2{
+    font-size:28px;
+}
+
+.pharmacy-grid{
+    grid-template-columns:repeat(2,1fr);
+}
+
+}
+
+@media(max-width:480px){
+
+.pharmacy-grid{
+    grid-template-columns:1fr;
+}
+
+.shop-btn{
+    width:100%;
+    justify-content:center;
+}
+
+}

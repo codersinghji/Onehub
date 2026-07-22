@@ -27,7 +27,7 @@
 
 .deal-grid{
     display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
     gap:25px;
 }
 
@@ -148,4 +148,20 @@
     height:140px;
 }
 
+}
+.view-all-btn{
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    padding:12px 24px;
+    background:#2563eb;
+    color:#fff;
+    text-decoration:none;
+    border-radius:8px;
+    font-weight:600;
+    transition:.3s;
+}
+
+.view-all-btn:hover{
+    background:#1d4ed8;
 }

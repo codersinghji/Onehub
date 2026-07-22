@@ -1,4 +1,5 @@
 import "./PopularBrands.css";
+import { Link } from "react-router-dom";
 
 import apple from "../../assets/brands/apple.png";
 import samsung from "../../assets/brands/samsung.png";
@@ -28,12 +29,11 @@ function PopularBrands() {
 
         <div className="brands-header">
           <h2>Popular Brands</h2>
+          
+       <Link to="/popular-brands" className="view-all">
+         View All
+        </Link>
 
-          <button
-            onClick={() => alert("View All Brands")}
-          >
-            View All
-          </button>
         </div>
 
         <div className="brands-grid">
